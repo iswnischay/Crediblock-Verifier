@@ -47,7 +47,7 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Crediblock-Verifier:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/crediblock-verifier:latest
 
   deploy:
     name: Deploy
