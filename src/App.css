@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #181818; /* Dark background color */
+  color: #17b8bd; /* Dark text color */
+}
+/* Common navbar styling */
+nav {
+  background-color: #343a40; /* Default navbar color */
+  transition: background-color 0.3s; /* Smooth transition for navbar color */
+}
+
+/* Dark theme navbar color */
+body.dark nav {
+  background-color: #212529; /* Dark navbar color */
+}
+
+/* Light theme navbar color */
+body.light nav {
+  background-color:white;
+  color: black; /* Light navbar color */
+}
+
+/* Theme toggle button */
+body.dark .theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #17b8bd; /* Set a default color for the toggle button */
+  font-size: 24px; /* Increase font size for better visibility */
+  margin-left: 20px; /* Add some space from the links */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+body.dark.theme-toggle:hover {
+  color: #15a6a6; /* Change color on hover for better visibility */
+}
+
+/* General text styling */
+.ppp {
+  font-size: 21px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.hhh {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Link styling in navigation */
+body.dark nav .ref {
+  color: #17b8bd; /* Default link color */
+  text-decoration: none;
+  font-size: 25px; /* Set font size */
+  margin-right: 50px;
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+body.dark nav .ref:focus,
+body.dark nav .ref:hover {
+  color: white; /* Change link color on hover for better visibility */
+}
+
+/* Underline effect for links */
+body.dark nav .ref:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #17b8bd; /* Change underline color to match the theme */
+  transition: width 0.4s ease, left 0.4s ease; /* Smooth transition for underline */
+}
+
+body.dark nav .ref:focus:after,
+body.dark nav .ref:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+/* Light theme for link hover */
+body.light nav .ref:hover {
+  color: #343a40; /* Change link color on hover for better visibility in light theme */
+}
+/* Theme toggle button */
+body.light .theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black; /* Set a default color for the toggle button */
+  font-size: 24px; /* Increase font size for better visibility */
+  margin-left: 20px; /* Add some space from the links */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+body.light .theme-toggle:hover {
+  color: darkgray; /* Change color on hover for better visibility */
+}
+
+/* General text styling */
+
+/* Link styling in navigation */
+body.light nav .ref {
+  color: black; /* Default link color */
+  text-decoration: none;
+  font-size: 25px; /* Set font size */
+  margin-right: 50px;
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+body.light nav .ref:focus,
+body.light nav .ref:hover {
+  color: #181818; /* Change link color on hover for better visibility */
+}
+
+/* Underline effect for links */
+body.light nav .ref:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black; /* Change underline color to match the theme */
+  transition: width 0.4s ease, left 0.4s ease; /* Smooth transition for underline */
+}
+
+body.light nav .ref:focus:after,
+body.light nav .ref:hover:after {
+  width: 100%;
+  left: 0%;
+}
