@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore, collection, doc, getDoc, getDocs } from "firebase/firestore"; // Import getFirestore
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB7co7v87wbZTuacsTQUso7ujGdnVwupEg",
+    apiKey: "put your own api key",
     authDomain: "crediblock-xyz.firebaseapp.com",
     projectId: "crediblock-xyz",
     storageBucket: "crediblock-xyz.firebasestorage.app",
